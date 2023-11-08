@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>EMP Man.. | Log In</title>
+
+  <link rel="icon" href="https://spinalcompass.com/wp-content/uploads/2017/07/Employees_icon-01.png">
+  <style>
+    * {
+
+      margin: 0;
+      padding: 0;
+
+    }
+
+    body {
+      background: url(https://th.bing.com/th/id/R.20ccedba1c257ba3bcd3db515e900fc3?rik=DdXGXKwR67TiRA&riu=http%3a%2f%2fwww.baltana.com%2ffiles%2fwallpapers-2%2fBusiness-Powerpoint-Background-Wallpaper-HD-06761.jpg&ehk=QS93oTEh4B7qn6q9ZIgpJ5C3lFKAcJzcRyo8tVxJxis%3d&risl=&pid=ImgRaw&r=0);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    nav {
+      height: 50px;
+      background: linear-gradient(5deg, rgb(194, 219, 124), rgb(235, 243, 160));
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 0 10px -5px black;
+    }
+
+    .logo {
+
+      font-size: 30px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: bolder;
+      margin-left: 15px;
+    }
+
+    .logo:hover {
+      text-shadow: 0 0 10px;
+    }
+
+    .help {
+      color: black;
+      font-size: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin-right: 15px;
+      padding: 2px 5px;
+      background-color: white;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all .05s ease-in-out;
+      box-shadow: 0 0 10px -5px black;
+
+    }
+
+    .help:hover {}
+
+    .help:active {
+      transform: scale(.95);
+    }
+
+    .welcome-form {
+      height: 80vh;
+      width: 80vw;
+      margin: 2% 10% 0% 10%;
+      background: rgba(255, 255, 255, .3);
+      border-radius: 10px;
+      box-shadow: 0 0 10px -5px;
+      position: relative;
+
+    }
+
+    .form {
+      text-align: center;
+      padding-top: 150px;
+      width: 600px;
+      margin: auto;
+    }
+
+    .form input,
+    .form select {
+      height: 30px;
+      width: 250px;
+      border: none;
+      box-sizing: border-box;
+      outline-offset: 4px;
+      outline-color: gray;
+      outline-width: 0.5px;
+      margin: 7px;
+      padding-left: 10px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px -5px;
+    }
+
+    .options {
+      display: list-item;
+      list-style: none;
+      max-width: 300px;
+      margin: auto;
+    }
+
+    .buttons button {
+      width: 250px;
+      height: 30px;
+      padding: 5px 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+      background: rgba(255, 255, 255, .8);
+    }
+
+    .welcome-form img {
+      position: absolute;
+      top: 30px;
+      left: 500px;
+      height: 100px;
+    }
+
+    .welcome-form h1 {
+      background-color: #fff;
+      border-radius: 40px;
+      margin: 20px auto;
+      width: fit-content;
+      padding: 10px 40px;
+      box-shadow: inset 0 0 10px -5px;
+    }
+
+
+    .create-btn:hover,
+    .back-btn:hover {
+
+      cursor: pointer;
+
+    }
+
+    .create-btn:active,
+    .back-btn:active {
+      transform: scale(.95);
+    }
+
+    .form div{
+      width: 300px;
+      margin: 20px auto;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-around;
+      color: #fff;
+      box-shadow: 0 0 10px -1px;
+    }
+    .form div * {
+      margin: 5px;
+      height: 30px;
+      width: 100px;
+      border-radius: 35px;
+      transition: all .05s ease-in-out;
+      border: none;
+      color: #fff;
+      font-weight: bold;
+    }
+    .create-btn{
+      background: rgba(176, 255, 123, 0.8);
+    }
+    .back-btn{
+      background: rgba(53, 164, 228, 0.8);
+       }
+
+    .form select {
+      text-align: center;
+      width: 150px;
+    }
+    a:visited{
+      color: blue;
+    }
+   
+
+    #msg {
+      color: whitesmoke;
+      min-width: 250px;
+      padding: 10px;
+      border-radius: 5px;
+      position: absolute;
+      margin: 30px 550px;
+      box-shadow: 0 0 10px 2px white;
+      font-weight: bold;
+      text-align: center
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <nav>
+    <span class="logo" onclick="location.href='index.html'">LOGO</span>
+    <span class="help">Help</span>
+  </nav>
+
+  <div class="welcome-form">
+
+    <div class="options">
+      <img src="https://cdn3.iconfinder.com/data/icons/team-management/136/19-1024.png" alt="img">
+    </div>
+
+    <div class="form">
+      <h1>Log In</h1>
+      <form action="login-account" method="get">
+
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <select name="role" id="role">
+          <option value="manager" selected>Manager</option>
+          <option value="employee">Employee</option>
+        </select>
+        <div>
+          <button class="back-btn" onclick="location.href='index.html'">Back</button>
+          <button class="create-btn">Log In</button>
+        </div>
+      </form>
+      <a href="#" onclick="forgot()">Forgot Password?</a>
+    </div>
+
+  </div>
+</body>
+
+</html>
